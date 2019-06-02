@@ -84,11 +84,10 @@ def evaluate_compliance(configuration_item):
 
 def lambda_handler(event, context):
     print(event)
-    # decode the aws config response
+
     invoking_event = json.loads(event['invokingEvent'])
     configuration_item = invoking_event["configurationItem"]
 
-    # pass the configuration item to our method
     evaluation = evaluate_compliance(configuration_item)
 
     config = boto3.client('config')
