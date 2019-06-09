@@ -8,3 +8,5 @@ Variables
 # add the security group IDs which are allowed to have public CIDR Blocks
 SECURITY_GROUPS_ALLOWED_PUBLIC_ACCESS = ["sg-0802d47fff16062080"]
 ```
+
+https://www.infinitypp.com/amazon-aws/writing-custom-aws-config-rules-using-lambda/
